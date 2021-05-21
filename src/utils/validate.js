@@ -9,7 +9,7 @@ export function isExternal(path) {
 export const createExcel = (sheetData, sheetHead, sheetName) => {
   const tempSheetData = [sheetHead]
   sheetData.forEach(item => {
-    const tRowData = [... item]
+    const tRowData = [...item]
     tempSheetData.push(tRowData)
   })
   const ws = XLSX.utils.aoa_to_sheet(tempSheetData)

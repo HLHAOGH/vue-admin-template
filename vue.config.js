@@ -23,6 +23,7 @@ module.exports = {
     // excute this middleware before others middlewares
   },
   configureWebpack: {
+    title: '',
     resolve: {
       alias: {
         '@': resolve('src')

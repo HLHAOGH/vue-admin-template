@@ -7,7 +7,8 @@ export const constantRoutes = [
     component: () => import('@/views/dashboard/index'),
     meta: {
       breadcrumb: false,
-      activeMenu: '/index'
+      title: '首页',
+      activeMenu: '/',
     },
     // hide menu
     hidden: true
@@ -28,7 +29,6 @@ export const constantRoutes = [
         component: () => import('@/views/dashboard/index'),
         meta: {
           title: '子菜单1',
-          icon: 'dashboard',
           breadcrumb: true
         },
         children: []

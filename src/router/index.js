@@ -17,7 +17,7 @@ const createRouter = () => new Router({
       meta: {
         title: '首页',
         icon: 'dashboard',
-        breadcrumb: true
+        breadcrumb: true,
       },
       hidden: false,
       children: [
@@ -32,6 +32,9 @@ const router = createRouter()
 router.beforeEach((to, _, next) => {
   if (to.meta.title) {
     document.title = to.meta.title
+  } else if (to.path === '/') {
+    window.location.href = location.origin + '/index'
+    document.title = this.$route.meta.title;
   }
   next()
 })

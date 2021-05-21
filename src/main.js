@@ -17,8 +17,7 @@ Vue.use(ElementUI, { size: 'small', zIndex: 3000 })
 Vue.config.productionTip = false
 
 new Vue({
-  el: '#app',
   router,
   store,
   render: h => h(App)
-})
+}).$mount('#app')

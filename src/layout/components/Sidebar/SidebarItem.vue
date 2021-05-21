@@ -1,8 +1,8 @@
 <template>
   <div v-if="!item.hidden">
     <template v-if="item.name === 'Home'">
-      <app-link :to="resolvePath(item.path)">
-        <el-menu-item :index="resolvePath(item.path)" :class="{'submenu-title-noDropdown':!isNest}">
+      <app-link :to="item.path">
+        <el-menu-item :index="item.path" :class="{'submenu-title-noDropdown':!isNest}">
           <item :icon="item.meta.icon" :title="item.meta.title" />
         </el-menu-item>
       </app-link>
