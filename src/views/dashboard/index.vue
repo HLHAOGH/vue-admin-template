@@ -1,0 +1,13 @@
+<template>
+  <div class="content-warp" />
+</template>
+
+<script>
+export default {
+  data() {
+    return {}
+  },
+  methods: {
+  }
+}
+</script>
